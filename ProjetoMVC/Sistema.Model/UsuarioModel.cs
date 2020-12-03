@@ -9,5 +9,14 @@ namespace Sistema.Model
 {
     public class UsuarioModel
     {
+        public static int Inserir(UsuarioEnt objTabela)
+        {
+            return new UsuarioDAO().Inserir(objTabela);
+        }
+
+        public List<UsuarioEnt> lista()
+        {
+            return new UsuarioDAO().lista();
+        }
     }
 }

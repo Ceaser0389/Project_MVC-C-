@@ -145,6 +145,7 @@ namespace Sistema.View
             this.btnNovo.TabIndex = 10;
             this.btnNovo.Text = "Novo";
             this.btnNovo.UseVisualStyleBackColor = true;
+            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
             // btnSalvar
             // 
@@ -154,6 +155,7 @@ namespace Sistema.View
             this.btnSalvar.TabIndex = 11;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // btnExcluir
             // 
@@ -163,6 +165,7 @@ namespace Sistema.View
             this.btnExcluir.TabIndex = 12;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btbEditar
             // 
@@ -172,6 +175,7 @@ namespace Sistema.View
             this.btbEditar.TabIndex = 13;
             this.btbEditar.Text = "Editar";
             this.btbEditar.UseVisualStyleBackColor = true;
+            this.btbEditar.Click += new System.EventHandler(this.btbEditar_Click);
             // 
             // btnProduto
             // 
@@ -252,6 +256,7 @@ namespace Sistema.View
             this.Name = "frmCadUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmCadUsuario";
+            this.Load += new System.EventHandler(this.frmCadUsuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

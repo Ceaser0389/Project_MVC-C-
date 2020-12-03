@@ -1,0 +1,10 @@
+C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.DAO\bin\Debug\Sistema.DAO.dll
+C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.DAO\bin\Debug\Sistema.DAO.pdb
+C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.DAO\bin\Debug\Sistema.Entidades.dll
+C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.DAO\bin\Debug\Sistema.Entidades.pdb
+C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.DAO\obj\Debug\Sistema.DAO.csprojAssemblyReference.cache
+C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.DAO\obj\Debug\Sistema.DAO.csproj.CoreCompileInputs.cache
+C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.DAO\obj\Debug\Sistema.DAO.csproj.CopyComplete
+C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.DAO\obj\Debug\Sistema.DAO.dll
+C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.DAO\obj\Debug\Sistema.DAO.pdb
+C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.DAO\bin\Debug\Sistema.DAO.dll.config

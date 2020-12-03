@@ -46,6 +46,7 @@ namespace Sistema.View
             this.btnLogin.TabIndex = 0;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // BtnSair
             // 
@@ -94,7 +95,7 @@ namespace Sistema.View
             // lblMensagem
             // 
             this.lblMensagem.AutoSize = true;
-            this.lblMensagem.Location = new System.Drawing.Point(59, 208);
+            this.lblMensagem.Location = new System.Drawing.Point(50, 202);
             this.lblMensagem.Name = "lblMensagem";
             this.lblMensagem.Size = new System.Drawing.Size(37, 13);
             this.lblMensagem.TabIndex = 6;
@@ -104,7 +105,7 @@ namespace Sistema.View
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(321, 255);
+            this.ClientSize = new System.Drawing.Size(358, 247);
             this.Controls.Add(this.lblMensagem);
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.txtUsuario);

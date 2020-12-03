@@ -1,0 +1,6 @@
+C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.Entidades\bin\Debug\Sistema.Entidades.dll
+C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.Entidades\bin\Debug\Sistema.Entidades.pdb
+C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.Entidades\obj\Debug\Sistema.Entidades.csprojAssemblyReference.cache
+C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.Entidades\obj\Debug\Sistema.Entidades.csproj.CoreCompileInputs.cache
+C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.Entidades\obj\Debug\Sistema.Entidades.dll
+C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.Entidades\obj\Debug\Sistema.Entidades.pdb
