@@ -3,10 +3,10 @@ C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.Model\bin\Debug\Sistema
 C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.Model\bin\Debug\Sistema.DAO.dll
 C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.Model\bin\Debug\Sistema.Entidades.dll
 C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.Model\bin\Debug\Sistema.DAO.pdb
+C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.Model\bin\Debug\Sistema.DAO.dll.config
 C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.Model\bin\Debug\Sistema.Entidades.pdb
 C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.Model\obj\Debug\Sistema.Model.csprojAssemblyReference.cache
 C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.Model\obj\Debug\Sistema.Model.csproj.CoreCompileInputs.cache
 C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.Model\obj\Debug\Sistema.Model.csproj.CopyComplete
 C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.Model\obj\Debug\Sistema.Model.dll
 C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.Model\obj\Debug\Sistema.Model.pdb
-C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.Model\bin\Debug\Sistema.DAO.dll.config

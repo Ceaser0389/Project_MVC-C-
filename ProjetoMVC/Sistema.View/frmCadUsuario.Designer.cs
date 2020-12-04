@@ -136,6 +136,7 @@ namespace Sistema.View
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(210, 20);
             this.txtBuscar.TabIndex = 9;
+            this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
             // btnNovo
             // 
@@ -199,8 +200,10 @@ namespace Sistema.View
             this.grid.Location = new System.Drawing.Point(12, 227);
             this.grid.Name = "grid";
             this.grid.ReadOnly = true;
+            this.grid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grid.Size = new System.Drawing.Size(424, 150);
             this.grid.TabIndex = 15;
+            this.grid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_CellClick);
             // 
             // Codico
             // 

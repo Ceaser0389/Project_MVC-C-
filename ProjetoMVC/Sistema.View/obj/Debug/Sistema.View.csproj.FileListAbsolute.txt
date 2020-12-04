@@ -1,10 +1,13 @@
-C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.View\bin\Debug\Sistema.View.exe.config
 C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.View\bin\Debug\Sistema.View.exe
-C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.View\bin\Debug\Sistema.View.pdb
 C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.View\bin\Debug\Sistema.Entidades.dll
 C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.View\bin\Debug\Sistema.Model.dll
+C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.View\bin\Debug\Sistema.DAO.dll
+C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.View\bin\Debug\Sistema.View.exe.config
+C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.View\bin\Debug\Sistema.View.pdb
 C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.View\bin\Debug\Sistema.Entidades.pdb
 C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.View\bin\Debug\Sistema.Model.pdb
+C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.View\bin\Debug\Sistema.DAO.pdb
+C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.View\bin\Debug\Sistema.DAO.dll.config
 C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.View\obj\Debug\Sistema.View.csprojAssemblyReference.cache
 C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.View\obj\Debug\Sistema.View.frmCadProduto.resources
 C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.View\obj\Debug\Sistema.View.frmCadUsuario.resources
@@ -15,6 +18,3 @@ C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.View\obj\Debug\Sistema.
 C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.View\obj\Debug\Sistema.View.csproj.CopyComplete
 C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.View\obj\Debug\Sistema.View.exe
 C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.View\obj\Debug\Sistema.View.pdb
-C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.View\bin\Debug\Sistema.DAO.dll
-C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.View\bin\Debug\Sistema.DAO.pdb
-C:\Projetos\CSharp\C  IDE\Projeto-MVC\ProjetoMVC\Sistema.View\bin\Debug\Sistema.DAO.dll.config
