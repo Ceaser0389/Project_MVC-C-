@@ -18,5 +18,10 @@ namespace Sistema.Model
         {
             return new UsuarioDAO().lista();
         }
+
+        public UsuarioEnt Login(UsuarioEnt obj)
+        {
+            return new UsuarioDAO().Login(obj);
+        }
     }
 }

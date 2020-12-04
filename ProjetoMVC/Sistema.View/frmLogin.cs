@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Sistema.Entidades;
+using Sistema.Model;
 namespace Sistema.View
 {
     public partial class frmLogin : Form
@@ -19,8 +20,49 @@ namespace Sistema.View
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            frmCadUsuario form  = new frmCadUsuario();
-            form.Show();
+            try
+            {
+                if (txtUsuario.Text== "")
+                {
+                    MessageBox.Show("Preencha o Campo Usuário!");
+                    txtUsuario.Focus();
+                    return;
+                }
+
+                if (txtSenha.Text == "")
+                {
+                    MessageBox.Show("Preencha o Campo Senha!");
+                    txtSenha.Focus();
+                    return;
+                }
+
+
+
+                UsuarioEnt obj = new UsuarioEnt();
+                obj.Usuario = txtUsuario.Text;
+                obj.Senha = txtSenha.Text;
+
+                obj = new UsuarioModel().Login(obj);
+
+                if(obj.Usuario == null)
+                {
+                    lblMensagem.Text = "Usuário ou Senha não encontrado";
+                    lblMensagem.ForeColor = Color.Red;
+                    return;
+                }
+
+                frmCadUsuario form = new frmCadUsuario();
+                this.Hide();
+                form.Show();
+                //this.Close();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Erro ao Logar" + ex.Message);
+            }
+
+           
         }
     }
 }

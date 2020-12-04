@@ -118,9 +118,9 @@ namespace Sistema.View
             this.txtSenha.Enabled = false;
             this.txtSenha.Location = new System.Drawing.Point(105, 173);
             this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(210, 20);
             this.txtSenha.TabIndex = 7;
-            this.txtSenha.Text = "*";
             // 
             // txtCodico
             // 

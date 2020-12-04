@@ -53,6 +53,57 @@ namespace Sistema.DAO
 
         }
 
+        public UsuarioEnt Login(UsuarioEnt obj)
+        {
+            using (SqlConnection con = new SqlConnection())
+            {
+
+                //aki associa obj (con com connnectionString)
+                con.ConnectionString = Properties.Settings.Default.banco;//aki assoaciação, conecçao feita por padrão pede default +nome
+                /* SqlCommand p vc usar comandos para comunicar com banco 
+                variavel aki usada foi cn, houve uma instanciação SqlCommand  */
+                SqlCommand cn = new SqlCommand();
+                /* CommandType é text pois as info geralmente passados em form de string  */
+                cn.CommandType = CommandType.Text; // tipo texto
+
+                //inicializar a conexao (abrir)
+                con.Open();
+
+                // para consultar dados na tabela 
+                cn.CommandText = "SELECT * from usuarios where usuario = @usuario AND senha = @senha";
+                // os parametros seriam usados se utiliza-se where 
+
+                //associando  conexaoString meu obj SQLCommand
+                cn.Connection = con;
+
+                cn.Parameters.Add("usuario", SqlDbType.VarChar).Value = obj.Usuario;
+                cn.Parameters.Add("senha", SqlDbType.VarChar).Value = obj.Senha;
+
+                SqlDataReader dr;  // usado para consultas 
+                                   // execute reader para consulta os dados (armazenado remem obj dataReader)
+                dr = cn.ExecuteReader();
+
+                if (dr.HasRows)  // verificação se tem linhas no banco 
+                {
+                    // prenchimento da tabale retornada eplo data reader 
+                    while (dr.Read()) // while que faz leitura dos dados  no dataReader
+                    {
+                        UsuarioEnt dado = new UsuarioEnt();  /// instanciaçao obj dado
+
+                        dado.Usuario = Convert.ToString(dr["usuario"]);
+                        dado.Senha = Convert.ToString(dr["senha"]);
+                    }
+                }
+                else
+                {
+                    obj.Usuario = null; // não encontrar  obj é null
+                    obj.Senha = null;
+                }
+                return obj;
+
+            }
+        }
+
         public List<UsuarioEnt> lista()
         {
             using (SqlConnection con = new SqlConnection())

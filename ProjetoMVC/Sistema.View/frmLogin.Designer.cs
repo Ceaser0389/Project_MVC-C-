@@ -77,7 +77,6 @@ namespace Sistema.View
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Enabled = false;
             this.txtUsuario.Location = new System.Drawing.Point(102, 58);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(141, 20);
@@ -85,7 +84,6 @@ namespace Sistema.View
             // 
             // txtSenha
             // 
-            this.txtSenha.Enabled = false;
             this.txtSenha.Location = new System.Drawing.Point(102, 91);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '*';
