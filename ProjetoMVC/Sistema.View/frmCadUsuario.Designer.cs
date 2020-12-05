@@ -186,6 +186,7 @@ namespace Sistema.View
             this.btnProduto.TabIndex = 14;
             this.btnProduto.Text = "Produto";
             this.btnProduto.UseVisualStyleBackColor = true;
+            this.btnProduto.Click += new System.EventHandler(this.btnProduto_Click);
             // 
             // grid
             // 

@@ -34,16 +34,20 @@ namespace Sistema.View
             this.lblDescricao = new System.Windows.Forms.Label();
             this.lblValor = new System.Windows.Forms.Label();
             this.lblBuscar = new System.Windows.Forms.Label();
-            this.txtCodico = new System.Windows.Forms.TextBox();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
             this.txtNome = new System.Windows.Forms.TextBox();
-            this.txtDescrisão = new System.Windows.Forms.TextBox();
+            this.txtDescricao = new System.Windows.Forms.TextBox();
             this.txtValor = new System.Windows.Forms.TextBox();
             this.txtBuscar = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnNovo = new System.Windows.Forms.Button();
+            this.btnSalvar = new System.Windows.Forms.Button();
+            this.btnExcluir = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
             this.grid1 = new System.Windows.Forms.DataGridView();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descricao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.grid1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,7 +58,7 @@ namespace Sistema.View
             this.lblCodico.Name = "lblCodico";
             this.lblCodico.Size = new System.Drawing.Size(43, 13);
             this.lblCodico.TabIndex = 0;
-            this.lblCodico.Text = "Códico:";
+            this.lblCodico.Text = "Código:";
             // 
             // lblNome
             // 
@@ -92,13 +96,13 @@ namespace Sistema.View
             this.lblBuscar.TabIndex = 4;
             this.lblBuscar.Text = "Buscar:";
             // 
-            // txtCodico
+            // txtCodigo
             // 
-            this.txtCodico.Enabled = false;
-            this.txtCodico.Location = new System.Drawing.Point(110, 80);
-            this.txtCodico.Name = "txtCodico";
-            this.txtCodico.Size = new System.Drawing.Size(65, 20);
-            this.txtCodico.TabIndex = 5;
+            this.txtCodigo.Enabled = false;
+            this.txtCodigo.Location = new System.Drawing.Point(110, 80);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(65, 20);
+            this.txtCodigo.TabIndex = 5;
             // 
             // txtNome
             // 
@@ -108,13 +112,13 @@ namespace Sistema.View
             this.txtNome.Size = new System.Drawing.Size(222, 20);
             this.txtNome.TabIndex = 6;
             // 
-            // txtDescrisão
+            // txtDescricao
             // 
-            this.txtDescrisão.Enabled = false;
-            this.txtDescrisão.Location = new System.Drawing.Point(110, 142);
-            this.txtDescrisão.Name = "txtDescrisão";
-            this.txtDescrisão.Size = new System.Drawing.Size(222, 20);
-            this.txtDescrisão.TabIndex = 7;
+            this.txtDescricao.Enabled = false;
+            this.txtDescricao.Location = new System.Drawing.Point(110, 142);
+            this.txtDescricao.Name = "txtDescricao";
+            this.txtDescricao.Size = new System.Drawing.Size(222, 20);
+            this.txtDescricao.TabIndex = 7;
             // 
             // txtValor
             // 
@@ -130,53 +134,95 @@ namespace Sistema.View
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(222, 20);
             this.txtBuscar.TabIndex = 9;
+            this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
-            // button1
+            // btnNovo
             // 
-            this.button1.Location = new System.Drawing.Point(366, 78);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(68, 23);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Novo";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnNovo.Location = new System.Drawing.Point(366, 78);
+            this.btnNovo.Name = "btnNovo";
+            this.btnNovo.Size = new System.Drawing.Size(68, 23);
+            this.btnNovo.TabIndex = 10;
+            this.btnNovo.Text = "Novo";
+            this.btnNovo.UseVisualStyleBackColor = true;
+            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click_1);
             // 
-            // button2
+            // btnSalvar
             // 
-            this.button2.Location = new System.Drawing.Point(366, 113);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(68, 23);
-            this.button2.TabIndex = 11;
-            this.button2.Text = "Salvar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnSalvar.Location = new System.Drawing.Point(366, 113);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(68, 23);
+            this.btnSalvar.TabIndex = 11;
+            this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
-            // button3
+            // btnExcluir
             // 
-            this.button3.Location = new System.Drawing.Point(366, 145);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(68, 23);
-            this.button3.TabIndex = 12;
-            this.button3.Text = "Excluir";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnExcluir.Location = new System.Drawing.Point(366, 145);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(68, 23);
+            this.btnExcluir.TabIndex = 12;
+            this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
-            // button4
+            // btnEditar
             // 
-            this.button4.Location = new System.Drawing.Point(366, 177);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(68, 23);
-            this.button4.TabIndex = 13;
-            this.button4.Text = "Editar";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnEditar.Location = new System.Drawing.Point(366, 177);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(68, 23);
+            this.btnEditar.TabIndex = 13;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // grid1
             // 
             this.grid1.AllowUserToAddRows = false;
             this.grid1.AllowUserToDeleteRows = false;
             this.grid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grid1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.id,
+            this.nome,
+            this.descricao,
+            this.valor});
             this.grid1.Location = new System.Drawing.Point(12, 220);
             this.grid1.Name = "grid1";
             this.grid1.ReadOnly = true;
+            this.grid1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grid1.Size = new System.Drawing.Size(434, 174);
             this.grid1.TabIndex = 14;
+            this.grid1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid1_CellClick);
+            // 
+            // id
+            // 
+            this.id.DataPropertyName = "Id";
+            this.id.HeaderText = "Códico";
+            this.id.Name = "id";
+            this.id.ReadOnly = true;
+            this.id.Width = 80;
+            // 
+            // nome
+            // 
+            this.nome.DataPropertyName = "Nome";
+            this.nome.HeaderText = "Nome do Produto";
+            this.nome.Name = "nome";
+            this.nome.ReadOnly = true;
+            this.nome.Width = 120;
+            // 
+            // descricao
+            // 
+            this.descricao.DataPropertyName = "Descricao";
+            this.descricao.HeaderText = "Descrição";
+            this.descricao.Name = "descricao";
+            this.descricao.ReadOnly = true;
+            // 
+            // valor
+            // 
+            this.valor.DataPropertyName = "Valor";
+            this.valor.HeaderText = "Valor";
+            this.valor.Name = "valor";
+            this.valor.ReadOnly = true;
             // 
             // frmCadProduto
             // 
@@ -184,15 +230,15 @@ namespace Sistema.View
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(463, 406);
             this.Controls.Add(this.grid1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnEditar);
+            this.Controls.Add(this.btnExcluir);
+            this.Controls.Add(this.btnSalvar);
+            this.Controls.Add(this.btnNovo);
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.txtValor);
-            this.Controls.Add(this.txtDescrisão);
+            this.Controls.Add(this.txtDescricao);
             this.Controls.Add(this.txtNome);
-            this.Controls.Add(this.txtCodico);
+            this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.lblBuscar);
             this.Controls.Add(this.lblValor);
             this.Controls.Add(this.lblDescricao);
@@ -202,6 +248,7 @@ namespace Sistema.View
             this.Name = "frmCadProduto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmCadProduto";
+            this.Load += new System.EventHandler(this.frmCadProduto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grid1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -215,15 +262,19 @@ namespace Sistema.View
         private System.Windows.Forms.Label lblDescricao;
         private System.Windows.Forms.Label lblValor;
         private System.Windows.Forms.Label lblBuscar;
-        private System.Windows.Forms.TextBox txtCodico;
+        private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.TextBox txtNome;
-        private System.Windows.Forms.TextBox txtDescrisão;
+        private System.Windows.Forms.TextBox txtDescricao;
         private System.Windows.Forms.TextBox txtValor;
         private System.Windows.Forms.TextBox txtBuscar;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnNovo;
+        private System.Windows.Forms.Button btnSalvar;
+        private System.Windows.Forms.Button btnExcluir;
+        private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.DataGridView grid1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn descricao;
+        private System.Windows.Forms.DataGridViewTextBoxColumn valor;
     }
 }

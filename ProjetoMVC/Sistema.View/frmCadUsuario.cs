@@ -249,9 +249,13 @@ namespace Sistema.View
             IniciarOpc();
         }
 
-        //private void btnProduto_Click(object sender, EventArgs e)
-        //  {
-        //opc""
-        ///}
+        private void btnProduto_Click(object sender, EventArgs e)
+        {
+            frmCadProduto form = new frmCadProduto();
+            this.Hide();
+            form.Show();
+        }
+
+        
     }
 }
